@@ -1,0 +1,549 @@
+{
+	"info": {
+		"_postman_id": "61f3e3ee-6ebb-4a96-82d9-85f384172193",
+		"name": "METACO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Explorer",
+			"item": [
+				{
+					"name": "GetAllUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/user?search=&paginated=true&page=1&per_page=10",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "",
+									"description": "search by keyword"
+								},
+								{
+									"key": "paginated",
+									"value": "true",
+									"description": "Will the the result be paginated"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "Current page"
+								},
+								{
+									"key": "per_page",
+									"value": "10",
+									"description": "How many items per page"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetAllUser",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/user?search=&paginated=true&page=1&per_page=10",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "",
+											"description": "search by keyword"
+										},
+										{
+											"key": "paginated",
+											"value": "true",
+											"description": "Will the the result be paginated"
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"description": "Current page"
+										},
+										{
+											"key": "per_page",
+											"value": "10",
+											"description": "How many items per page"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"message\": \"Request Success!\",\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 39250,\n                \"name\": \"Fakhri\",\n                \"email\": \"fakhrigg9@gmail.com\",\n                \"coin\": 136,\n                \"picture\": \"\"\n            },\n            {\n                \"id\": 54239,\n                \"name\": \"ilham afemi\",\n                \"email\": \"milhamafemi@gmail.com\",\n                \"coin\": 114,\n                \"picture\": \"\"\n            },\n            {\n                \"id\": 36237,\n                \"name\": \"Ari SP\",\n                \"email\": \"aridonghae1908@gmail.com\",\n                \"coin\": 46,\n                \"picture\": \"\"\n            },\n            {\n                \"id\": 38704,\n                \"name\": \"Daffa Nur patwa\",\n                \"email\": \"deuxdemonic@gmail.com\",\n                \"coin\": 18,\n                \"picture\": \"\"\n            },\n            {\n                \"id\": 8037,\n                \"name\": \"Taufik Ismail Harahap\",\n                \"email\": \"weerd526@gmail.com\",\n                \"coin\": 16,\n                \"picture\": \"\"\n            },\n            {\n                \"id\": 39239,\n                \"name\": \"Ridho Aberta\",\n                \"email\": \"abertaa1@gmail.com\",\n                \"coin\": 8,\n                \"picture\": \"\"\n            },\n            {\n                \"id\": 69574,\n                \"name\": \"healthcliff4_gmail_com\",\n                \"email\": \"healthcliff4@gmail.com\",\n                \"coin\": 8,\n                \"picture\": \"\"\n            },\n            {\n                \"id\": 36297,\n                \"name\": \"Muhammad Hafiz\",\n                \"email\": \"muhammadhafiz5931@gmail.com\",\n                \"coin\": 2,\n                \"picture\": \"\"\n            },\n            {\n                \"id\": 39254,\n                \"name\": \"imltx99_gmail_com\",\n                \"email\": \"imltx99@gmail.com\",\n                \"coin\": 2,\n                \"picture\": \"\"\n            },\n            {\n                \"id\": 42916,\n                \"name\": \"Gary Sivila\",\n                \"email\": \"garysivila27@gmail.com\",\n                \"coin\": 2,\n                \"picture\": \"\"\n            }\n        ],\n        \"meta\": {\n            \"page\": 1,\n            \"per_page\": 10,\n            \"search\": \"\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "GetUserById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/user/39250?with_data=true",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"39250"
+							],
+							"query": [
+								{
+									"key": "with_data",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetUserById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/user/39250?with_data=true",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"39250"
+									],
+									"query": [
+										{
+											"key": "with_data",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"message\": \"Request Success!\",\n    \"data\": {\n        \"id\": 43273,\n        \"name\": \"07. Budi Santoso\",\n        \"email\": \"overload604@gmail.com\",\n        \"coin\": 0,\n        \"picture\": \"\",\n        \"membership\": [\n            {\n                \"id\": 53857,\n                \"user\": {\n                    \"id\": 43273,\n                    \"name\": \"07. Budi Santoso\",\n                    \"email\": \"overload604@gmail.com\",\n                    \"coin\": 0,\n                    \"picture\": \"\"\n                },\n                \"team\": {\n                    \"id\": 7036,\n                    \"name\": \"The Orbit\",\n                    \"logo\": \"https://metacoweb.s3.amazonaws.com/team/thumbs/d13770c3e6c20aa8ebf9b7250289ee2f.jpg\",\n                    \"results\": [\n                        {\n                            \"id\": 9,\n                            \"point\": 2,\n                            \"position\": 3,\n                            \"team\": null\n                        }\n                    ]\n                },\n                \"ingame_id\": \"overload271\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "GetAllTeam",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/team?search=&paginated=true&page=1&per_page=10",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"team"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "",
+									"description": "search by keyword"
+								},
+								{
+									"key": "paginated",
+									"value": "true",
+									"description": "Will the the result be paginated"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "Current page"
+								},
+								{
+									"key": "per_page",
+									"value": "10",
+									"description": "How many items per page"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetAllTeam",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/user?search=&paginated=true&page=1&per_page=10",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "",
+											"description": "search by keyword"
+										},
+										{
+											"key": "paginated",
+											"value": "true",
+											"description": "Will the the result be paginated"
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"description": "Current page"
+										},
+										{
+											"key": "per_page",
+											"value": "10",
+											"description": "How many items per page"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"message\": \"Request Success!\",\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 5509,\n                \"name\": \"TroubleMaker\",\n                \"logo\": \"\",\n                \"captain\": {\n                    \"id\": 35549,\n                    \"name\": \"Satriaaww\",\n                    \"email\": \"satriaandhika3939@gmail.com\",\n                    \"coin\": 0,\n                    \"picture\": \"\"\n                }\n            },\n            {\n                \"id\": 5559,\n                \"name\": \"STARS\",\n                \"logo\": \"https://metacoweb.s3.amazonaws.com/team/thumbs/6959df7be5e00a7b59079410050b2d0a.jpg\",\n                \"captain\": {\n                    \"id\": 35953,\n                    \"name\": \"dondo doto\",\n                    \"email\": \"dondodotoo@gmail.com\",\n                    \"coin\": 0,\n                    \"picture\": \"\"\n                }\n            },\n            {\n                \"id\": 5575,\n                \"name\": \"Baperun tram\",\n                \"logo\": \"https://metacoweb.s3.amazonaws.com/team/thumbs/9ff669e07db454e53a7d01dca75d4c35.jpg\",\n                \"captain\": {\n                    \"id\": 36059,\n                    \"name\": \"Rofik Wahyu S\",\n                    \"email\": \"rofikwahyus90@gmail.com\",\n                    \"coin\": 0,\n                    \"picture\": \"\"\n                }\n            },\n            {\n                \"id\": 5578,\n                \"name\": \"NIGHT RAID\",\n                \"logo\": \"https://metacoweb.s3.amazonaws.com/team/thumbs/ed336389d7459bef29240c640182fd12.jpg\",\n                \"captain\": {\n                    \"id\": 35947,\n                    \"name\": \"Gietran\",\n                    \"email\": \"ares.muser@gmail.com\",\n                    \"coin\": 0,\n                    \"picture\": \"\"\n                }\n            },\n            {\n                \"id\": 5602,\n                \"name\": \"Abc\",\n                \"logo\": \"https://metacoweb.s3.amazonaws.com/team/thumbs/b59f9012b97292f2eca61aa5bcd4f7be.jpg\",\n                \"captain\": {\n                    \"id\": 36237,\n                    \"name\": \"Ari SP\",\n                    \"email\": \"aridonghae1908@gmail.com\",\n                    \"coin\": 46,\n                    \"picture\": \"\"\n                }\n            },\n            {\n                \"id\": 5605,\n                \"name\": \"Zeros\",\n                \"logo\": \"https://metacoweb.s3.amazonaws.com/team/thumbs/ede5a884792434a6ea396661e176155a.jpg\",\n                \"captain\": {\n                    \"id\": 36246,\n                    \"name\": \"Ariflutfulkhoiri\",\n                    \"email\": \"khoiriarif7@gmail.com\",\n                    \"coin\": 0,\n                    \"picture\": \"\"\n                }\n            },\n            {\n                \"id\": 5606,\n                \"name\": \"Sundanese18\",\n                \"logo\": \"\",\n                \"captain\": {\n                    \"id\": 36241,\n                    \"name\": \"XxxX\",\n                    \"email\": \"ponggaleong1933@gmail.com\",\n                    \"coin\": 0,\n                    \"picture\": \"\"\n                }\n            },\n            {\n                \"id\": 5610,\n                \"name\": \"Kepepet Team\",\n                \"logo\": \"https://metacoweb.s3.amazonaws.com/team/thumbs/dc776fc08d6e54ea10b165db6407a14c.jpg\",\n                \"captain\": {\n                    \"id\": 36274,\n                    \"name\": \"Ega Aulia Haryansyah\",\n                    \"email\": \"indonesian.potatos123@gmail.com\",\n                    \"coin\": 0,\n                    \"picture\": \"\"\n                }\n            },\n            {\n                \"id\": 5614,\n                \"name\": \"toxic4Core\",\n                \"logo\": \"https://metacoweb.s3.amazonaws.com/team/thumbs/9ff74ac0bbdb373950959bc0c1c73021.jpg\",\n                \"captain\": {\n                    \"id\": 36292,\n                    \"name\": \"Wahyu Hidayat\",\n                    \"email\": \"wahyu_programmer93@yahoo.com\",\n                    \"coin\": 0,\n                    \"picture\": \"\"\n                }\n            },\n            {\n                \"id\": 5616,\n                \"name\": \"Marfel Gaming\",\n                \"logo\": \"https://metacoweb.s3.amazonaws.com/team/thumbs/2e6562978a56f0e8f88cd7326e8de817.jpg\",\n                \"captain\": {\n                    \"id\": 36297,\n                    \"name\": \"Muhammad Hafiz\",\n                    \"email\": \"muhammadhafiz5931@gmail.com\",\n                    \"coin\": 2,\n                    \"picture\": \"\"\n                }\n            }\n        ],\n        \"meta\": {\n            \"page\": 1,\n            \"per_page\": 10,\n            \"search\": \"\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "GetTeamByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/team/5509?with_data=true",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"team",
+								"5509"
+							],
+							"query": [
+								{
+									"key": "with_data",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetUserById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/user/43273?with_data=true",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"43273"
+									],
+									"query": [
+										{
+											"key": "with_data",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"message\": \"Request Success!\",\n    \"data\": {\n        \"id\": 7036,\n        \"name\": \"The Orbit\",\n        \"logo\": \"https://metacoweb.s3.amazonaws.com/team/thumbs/d13770c3e6c20aa8ebf9b7250289ee2f.jpg\",\n        \"captain\": {\n            \"id\": 43273,\n            \"name\": \"07. Budi Santoso\",\n            \"email\": \"overload604@gmail.com\",\n            \"coin\": 0,\n            \"picture\": \"\"\n        },\n        \"members\": [\n            {\n                \"id\": 53858,\n                \"user\": {\n                    \"id\": 43271,\n                    \"name\": \"Royal\",\n                    \"email\": \"akumasmile666@gmail.com\",\n                    \"coin\": 0,\n                    \"picture\": \"\"\n                },\n                \"team\": null,\n                \"ingame_id\": \"Faisal\"\n            },\n            {\n                \"id\": 53857,\n                \"user\": {\n                    \"id\": 43273,\n                    \"name\": \"07. Budi Santoso\",\n                    \"email\": \"overload604@gmail.com\",\n                    \"coin\": 0,\n                    \"picture\": \"\"\n                },\n                \"team\": null,\n                \"ingame_id\": \"overload271\"\n            },\n            {\n                \"id\": 53860,\n                \"user\": {\n                    \"id\": 43282,\n                    \"name\": \"Sidhartatandiono_gmail_com\",\n                    \"email\": \"sidhartatandiono@gmail.com\",\n                    \"coin\": 0,\n                    \"picture\": \"\"\n                },\n                \"team\": null,\n                \"ingame_id\": \"0.25winrate\"\n            },\n            {\n                \"id\": 53859,\n                \"user\": {\n                    \"id\": 43283,\n                    \"name\": \"rayhan_azis030_gmail_com\",\n                    \"email\": \"rayhan.azis030@gmail.com\",\n                    \"coin\": 0,\n                    \"picture\": \"\"\n                },\n                \"team\": null,\n                \"ingame_id\": \"Rayhan Azis\"\n            },\n            {\n                \"id\": 53861,\n                \"user\": {\n                    \"id\": 43284,\n                    \"name\": \"supriy123qwerty_gmail_com\",\n                    \"email\": \"supriy123qwerty@gmail.com\",\n                    \"coin\": 0,\n                    \"picture\": \"\"\n                },\n                \"team\": null,\n                \"ingame_id\": \"Yanto Supriyanto\"\n            },\n            {\n                \"id\": 53862,\n                \"user\": {\n                    \"id\": 43285,\n                    \"name\": \"hasfiyusuf4_gmail_com\",\n                    \"email\": \"hasfiyusuf4@gmail.com\",\n                    \"coin\": 0,\n                    \"picture\": \"\"\n                },\n                \"team\": null,\n                \"ingame_id\": \"Hasfi\"\n            }\n        ],\n        \"results\": [\n            {\n                \"id\": 9,\n                \"point\": 2,\n                \"position\": 3,\n                \"team\": null\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Leaderboard",
+			"item": [
+				{
+					"name": "GetLeaderboard",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/leaderboard?search=&paginated=true&page=1&per_page=10",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"leaderboard"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "",
+									"description": "search by keyword"
+								},
+								{
+									"key": "paginated",
+									"value": "true",
+									"description": "Will the the result be paginated"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "Current page"
+								},
+								{
+									"key": "per_page",
+									"value": "10",
+									"description": "How many items per page"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetLeaderboard",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/leaderboard?search=&paginated=true&page=1&per_page=10",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"leaderboard"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "",
+											"description": "search by keyword"
+										},
+										{
+											"key": "paginated",
+											"value": "true",
+											"description": "Will the the result be paginated"
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"description": "Current page"
+										},
+										{
+											"key": "per_page",
+											"value": "10",
+											"description": "How many items per page"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"message\": \"Request Success!\",\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 9,\n                \"point\": 2,\n                \"position\": 3,\n                \"team\": {\n                    \"id\": 7036,\n                    \"name\": \"The Orbit\",\n                    \"logo\": \"https://metacoweb.s3.amazonaws.com/team/thumbs/d13770c3e6c20aa8ebf9b7250289ee2f.jpg\",\n                    \"captain\": {\n                        \"id\": 43273,\n                        \"name\": \"07. Budi Santoso\",\n                        \"email\": \"overload604@gmail.com\",\n                        \"coin\": 0,\n                        \"picture\": \"\"\n                    }\n                }\n            }\n        ],\n        \"meta\": {\n            \"page\": 1,\n            \"per_page\": 10,\n            \"search\": \"\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Leaderboard Detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/leaderboard/9?with_data=true",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"leaderboard",
+								"9"
+							],
+							"query": [
+								{
+									"key": "with_data",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Leaderboard Detail",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/leaderboard/9?with_data=true",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"leaderboard",
+										"9"
+									],
+									"query": [
+										{
+											"key": "with_data",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"message\": \"Request Success!\",\r\n    \"data\": {\r\n        \"id\": 9,\r\n        \"point\": 2,\r\n        \"position\": 3,\r\n        \"team\": {\r\n            \"id\": 7036,\r\n            \"name\": \"The Orbit\",\r\n            \"logo\": \"https://metacoweb.s3.amazonaws.com/team/thumbs/d13770c3e6c20aa8ebf9b7250289ee2f.jpg\",\r\n            \"captain\": {\r\n                \"id\": 43273,\r\n                \"name\": \"07. Budi Santoso\",\r\n                \"email\": \"overload604@gmail.com\",\r\n                \"coin\": 0,\r\n                \"picture\": \"\"\r\n            },\r\n            \"members\": [\r\n                {\r\n                    \"id\": 53857,\r\n                    \"user\": {\r\n                        \"id\": 43273,\r\n                        \"name\": \"07. Budi Santoso\",\r\n                        \"email\": \"overload604@gmail.com\",\r\n                        \"coin\": 0,\r\n                        \"picture\": \"\"\r\n                    },\r\n                    \"team\": null,\r\n                    \"ingame_id\": \"overload271\"\r\n                },\r\n                {\r\n                    \"id\": 53858,\r\n                    \"user\": {\r\n                        \"id\": 43271,\r\n                        \"name\": \"Royal\",\r\n                        \"email\": \"akumasmile666@gmail.com\",\r\n                        \"coin\": 0,\r\n                        \"picture\": \"\"\r\n                    },\r\n                    \"team\": null,\r\n                    \"ingame_id\": \"Faisal\"\r\n                },\r\n                {\r\n                    \"id\": 53859,\r\n                    \"user\": {\r\n                        \"id\": 43283,\r\n                        \"name\": \"rayhan_azis030_gmail_com\",\r\n                        \"email\": \"rayhan.azis030@gmail.com\",\r\n                        \"coin\": 0,\r\n                        \"picture\": \"\"\r\n                    },\r\n                    \"team\": null,\r\n                    \"ingame_id\": \"Rayhan Azis\"\r\n                },\r\n                {\r\n                    \"id\": 53860,\r\n                    \"user\": {\r\n                        \"id\": 43282,\r\n                        \"name\": \"Sidhartatandiono_gmail_com\",\r\n                        \"email\": \"sidhartatandiono@gmail.com\",\r\n                        \"coin\": 0,\r\n                        \"picture\": \"\"\r\n                    },\r\n                    \"team\": null,\r\n                    \"ingame_id\": \"0.25winrate\"\r\n                },\r\n                {\r\n                    \"id\": 53861,\r\n                    \"user\": {\r\n                        \"id\": 43284,\r\n                        \"name\": \"supriy123qwerty_gmail_com\",\r\n                        \"email\": \"supriy123qwerty@gmail.com\",\r\n                        \"coin\": 0,\r\n                        \"picture\": \"\"\r\n                    },\r\n                    \"team\": null,\r\n                    \"ingame_id\": \"Yanto Supriyanto\"\r\n                },\r\n                {\r\n                    \"id\": 53862,\r\n                    \"user\": {\r\n                        \"id\": 43285,\r\n                        \"name\": \"hasfiyusuf4_gmail_com\",\r\n                        \"email\": \"hasfiyusuf4@gmail.com\",\r\n                        \"coin\": 0,\r\n                        \"picture\": \"\"\r\n                    },\r\n                    \"team\": null,\r\n                    \"ingame_id\": \"Hasfi\"\r\n                }\r\n            ]\r\n        },\r\n        \"tournament\": {\r\n            \"id\": 111,\r\n            \"start_date\": null,\r\n            \"end_date\": null,\r\n            \"team_counts\": 10,\r\n            \"title\": \"Metaco Tournament Dota 2 #1\",\r\n            \"slot\": 10\r\n        }\r\n    }\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n      \"tournament_id\": 111,\r\n      \"team_id\": 5509,\r\n      \"position\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/leaderboard/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"leaderboard",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n      \"tournament_id\": 111,\r\n      \"team_id\": 7036,\r\n      \"position\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/leaderboard/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"leaderboard",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"message\": \"Request Success!\",\n    \"data\": {\n        \"id\": 9,\n        \"point\": 2,\n        \"position\": 3,\n        \"team\": {\n            \"id\": 7036,\n            \"name\": \"The Orbit\",\n            \"logo\": \"https://metacoweb.s3.amazonaws.com/team/thumbs/d13770c3e6c20aa8ebf9b7250289ee2f.jpg\",\n            \"captain\": {\n                \"id\": 43273,\n                \"name\": \"07. Budi Santoso\",\n                \"email\": \"overload604@gmail.com\",\n                \"coin\": 0,\n                \"picture\": \"\"\n            }\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
