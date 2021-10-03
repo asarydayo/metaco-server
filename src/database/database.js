@@ -25,16 +25,25 @@ const {
 
 const databaseCredentials = {
   DEVELOPMENT: {
-    dialect: "sqlite",
-    storage: "src/database/database_dev.sqlite3",
+    username: DATABASE_USER_DEV,
+    password: DATABASE_PASS_DEV,
+    database: DATABASE_NAME_DEV,
+    host: DATABASE_HOST_DEV,
+    dialect: DATABASE_TYPE_DEV,
   },
   TEST: {
-    dialect: "sqlite",
-    storage: ":memory",
+    username: DATABASE_USER_TEST,
+    password: DATABASE_PASS_TEST,
+    database: DATABASE_NAME_TEST,
+    host: DATABASE_HOST_TEST,
+    dialect: DATABASE_TYPE_TEST,
   },
   PRODUCTION: {
-    dialect: "sqlite",
-    storage: "src/database/database_production.sqlite3",
+    username: DATABASE_USER,
+    password: DATABASE_PASS,
+    database: DATABASE_NAME,
+    host: DATABASE_HOST,
+    dialect: DATABASE_TYPE,
   },
 };
 

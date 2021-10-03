@@ -41,24 +41,17 @@ const Team = sequelize.define(
       comment: "The logo of the team.",
     },
 
-    created_at: {
-      type: "TIMESTAMP",
-      defaultValue: new Date(),
-      allowNull: false,
-      comment: "The date which the record was created.",
-    },
-    updated_at: {
-      type: "TIMESTAMP",
-      allowNull: true,
-      comment: "The date which the record was last updated.",
-    },
+    created_at: DataTypes.DATE,
+    updated_at: DataTypes.DATE,
   },
   {
+    timestamps: true,
+    createdAt: "created_at",
+    updatedAt: "updated_at",
     modelName: "team",
     paranoid: false,
     freezeTableName: true,
     underscored: true,
-    timestamps: true,
   }
 );
 

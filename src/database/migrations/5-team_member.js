@@ -46,17 +46,9 @@ module.exports = {
         unique: false,
         comment: "Email used for logging in.",
       },
-      created_at: {
-        type: "TIMESTAMP",
-        defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"),
-        allowNull: false,
-        comment: "The date which the record was created.",
-      },
-      updated_at: {
-        type: "TIMESTAMP",
-        allowNull: true,
-        comment: "The date which the record was last updated.",
-      },
+
+      created_at: Sequelize.DATE,
+      updated_at: Sequelize.DATE,
     });
   },
 
