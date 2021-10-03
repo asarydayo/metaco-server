@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const SERVER_HOST = process.env.SERVER_HOST || "localhost";
-const SERVER_PORT = parseInt(<string>process.env.SERVER_PORT, 10) || 8000;
+const SERVER_PORT = parseInt(<string>process.env.PORT, 10) || 8000;
 
 const DATABASE_USER = process.env.DATABASE_USER || "root";
 const DATABASE_PASS = process.env.DATABASE_PASS || "";
